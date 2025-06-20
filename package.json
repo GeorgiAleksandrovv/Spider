@@ -1,0 +1,12 @@
+{
+  "name": "vinotverti-scraper",
+  "version": "1.0.0",
+  "main": "scrape.js",
+  "type": "module",
+  "scripts": {
+    "start": "node scrape.js"
+  },
+  "dependencies": {
+    "puppeteer": "^21.3.8"
+  }
+}
