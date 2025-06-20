@@ -32,8 +32,6 @@ async function scrapeVinotverti() {
       await productPage.goto(product.link, { waitUntil: "domcontentloaded", timeout: 60000 });
       await productPage.waitForTimeout(3000);
 
-      
-
       const fullTitle = await productPage.$eval("h1", el => el.innerText.trim()).catch(() => "Без заглавие");
 
       const rating = await productPage
